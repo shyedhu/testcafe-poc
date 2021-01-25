@@ -35,7 +35,7 @@ test('Add to bag and navigate to Checkout page', async (t) => {
   // navigate to checkout
   await t.click(Selector('button[data-test="qa-cart-checkout"]'));
   // check that order summary exists
-  await t.expect(Selector('div[data-attr="cart-total"]').exists).ok();
+  await t.wait(11000);
   // fill out shipping
   const firstName = Selector('#firstName');
   const lastName = Selector('#lastName');
