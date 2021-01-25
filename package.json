@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/testcafe chrome tests/page.test.js -e -s path=screenshots/${TEST}.png,takeOnFails=true --selector-timeout 10000 --assertion-timeout 10000 --page-load-timeout 10000"
+    "test": "./node_modules/.bin/testcafe chrome page.test.js -e -s path=screenshots/${TEST}.png,takeOnFails=true --selector-timeout 10000 --assertion-timeout 10000 --page-load-timeout 10000"
   },
   "repository": {
     "type": "git",
