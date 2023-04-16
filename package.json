@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "scripts": {
-    "test": "./node_modules/.bin/testcafe chrome page.test.js -e -s path=screenshots/${TEST}.png,takeOnFails=true --selector-timeout 12000 --assertion-timeout 12000 --page-load-timeout 12000"
+    "test": "./node_modules/.bin/testcafe chrome tests/page.test.js -e -u -s path=screenshots/${TEST}.png,takeOnFails=true --selector-timeout 12000 --assertion-timeout 12000 --page-load-timeout 12000"
   },
   "repository": {
     "type": "git",
@@ -13,6 +13,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "testcafe": "^1.9.4"
+    "testcafe": "1.19.0"
   }
 }
