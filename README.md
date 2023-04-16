@@ -3,7 +3,7 @@
 ### Installation
 
 ```
-git clone https://github.com/javenkn/testcafe-poc.git
+git clone https://github.com/shyedhu/testcafe-poc.git
 cd testcafe-poc
 npm install
 ```
