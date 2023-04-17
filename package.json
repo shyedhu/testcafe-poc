@@ -10,6 +10,7 @@
     "url": "https://github.com/shyedhu/testcafe-poc.git"
   },
   "keywords": [],
+  "license": "MIT",
   "author": "",
   "dependencies": {
     "testcafe": "1.19.0"
