@@ -8,8 +8,17 @@ cd testcafe-poc
 npm install
 ```
 
-### Run tests
+### Run tests on local mac chrome browser
 
 ```
-npm run test
+npm run test:local:chrome
+
+```
+
+### Run tests on browserstack chrom browser 
+
+```
+npm run test:browserstack:chrome
+
+
 ```
