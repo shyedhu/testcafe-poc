@@ -1,4 +1,4 @@
-fixture`Validate input on the page`
+fixture`Validate basic auth on the page`
   .page`https://the-internet.herokuapp.com/basic_auth`;
 
 test('verify the page', async (t) => {
