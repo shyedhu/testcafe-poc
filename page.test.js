@@ -1,5 +1,5 @@
-fixture`Validate basic auth on the page`
-  .page`https://the-internet.herokuapp.com/basic_auth`;
+fixture`Validate the page`
+  .page`https://www.google.com/`;
 
 test('verify the page', async (t) => {
   await t.wait(5000);
