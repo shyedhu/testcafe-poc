@@ -13,6 +13,6 @@
   "license": "MIT",
   "author": "",
   "dependencies": {
-    "testcafe": "3.6.2"
+    "testcafe": "3.7.0-rc.1"
   }
 }
