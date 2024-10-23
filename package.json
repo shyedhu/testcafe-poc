@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "",
   "scripts": {
-    "test:local:chrome": "./node_modules/.bin/testcafe chrome page.test.js -e -u -s path=screenshots/${TEST}.png,takeOnFails=true --selector-timeout 12000 --assertion-timeout 12000 --page-load-timeout 12000"
+    "test:local:chrome": "./node_modules/.bin/testcafe chrome page.test.js -e -u -s path=screenshots/${TEST}.png,takeOnFails=true --selector-timeout 12000 --assertion-timeout 12000 --page-load-timeout 12000 --video artifacts/videos --video-options singleFile=true,failedOnly=false,pathPattern=${TEST_INDEX}/${USERAGENT}/${FILE_INDEX}.mp4",
+    "test:local:firefox": "./node_modules/.bin/testcafe firefox page.test.js -e -u -s path=screenshots/${TEST}.png,takeOnFails=true --selector-timeout 12000 --assertion-timeout 12000 --page-load-timeout 12000 --video artifacts/videos --video-options singleFile=true,failedOnly=false,pathPattern=${TEST_INDEX}/${USERAGENT}/${FILE_INDEX}.mp4"
   },
   "repository": {
     "type": "git",
@@ -13,6 +14,7 @@
   "license": "MIT",
   "author": "",
   "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "testcafe": "3.7.0-rc.1"
   }
 }
